@@ -1,49 +1,36 @@
 import Image from "next/image";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-[#1a1a1a] ">
+      <Navbar />
 
-      {/* NAVBAR */}
-      <nav className="absolute pt-8  top-0 left-0 w-full z-20 px-14 py-10 flex justify-between items-center">
-        <h1 className="text-black text-3xl font-light tracking-[0.25em] drop-shadow">
-          ScandiDesk
-        </h1>
+      {/* HERO */}
+      <section className="relative w-full h-[60vh] flex items-end justify-center pb-24 mb-0">
+        <Image
+          src="https://www.yankodesign.com/images/design_news/2022/06/this-beautiful-wooden-desk-has-subtle-ways-for-you-to-organize-your-things/pessoa-desk-8.jpg"
+          alt="ScandiDesk Hero"
+          fill
+          priority
+          className="object-cover object-[center_0%]"
+        />
 
-        <ul className="flex gap-12 text-white text-sm font-light tracking-[0.2em] drop-shadow">
-          <li className="hover:opacity-80 transition cursor-pointer">HOME</li>
-          <li className="hover:opacity-80 transition cursor-pointer">PRODUKTER</li>
-          <li className="hover:opacity-80 transition cursor-pointer">OM OSS</li>
-        </ul>
-      </nav>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/40 z-[1]" />
 
-{/* HERO */}
-<section className="relative w-full h-[60vh] flex items-end justify-center pb-24 mb-0">
-  <Image
-    src="https://www.yankodesign.com/images/design_news/2022/06/this-beautiful-wooden-desk-has-subtle-ways-for-you-to-organize-your-things/pessoa-desk-8.jpg"
-    alt="ScandiDesk Hero"
-    fill
-    priority
-    className="object-cover object-[center_0%]"
-  />
+        <div className="relative z-10 text-center px-6">
+          <h1 className="text-4xl md:text-6xl font-light tracking-tight text-white drop-shadow-xl">
+            ScandiDesk
+          </h1>
 
-  <div className="relative z-10 text-center px-6">
-    <h1 className="text-4xl md:text-6xl font-light tracking-tight text-white drop-shadow-xl">
-      ScandiDesk
-    </h1>
-
-    <p className="text-lg md:text-xl max-w-xl mx-auto text-white/90 leading-relaxed mt-4 drop-shadow">
-      Scandinavian desk essentials in natural wood.
-    </p>
-  </div>
-</section>
-
-
-
+          <p className="text-lg md:text-xl max-w-xl mx-auto text-white/90 leading-relaxed mt-4 drop-shadow">
+            Scandinavian desk essentials in natural wood.
+          </p>
+        </div>
+      </section>
 
       {/* EVERYTHING BELOW HERO IS BEIGE */}
       <div className="bg-[#faf8f5] pt-12">
-
         {/* PRODUCT GRID */}
         <section className="px-6 py-14 max-w-6xl mx-auto">
           <h2 className="text-3xl font-light text-center mb-20">
@@ -51,7 +38,6 @@ export default function Home() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-20">
-
             {/* Amazon Image */}
             <div className="group">
               <div className="w-full h-80 rounded-xl overflow-hidden shadow-sm group-hover:shadow-md transition relative">
@@ -102,14 +88,12 @@ export default function Home() {
               </p>
               <p className="font-medium mt-2">849 kr</p>
             </div>
-
           </div>
         </section>
 
         {/* SUSTAINABLE WOOD SECTION */}
         <section className="px-6 py-32">
           <div className="max-w-4xl mx-auto bg-[#e9e4db] rounded-2xl p-16 shadow-sm">
-
             <h2 className="text-3xl font-light mb-6 text-center">
               Sustainable Scandinavian Wood
             </h2>
@@ -125,14 +109,12 @@ export default function Home() {
               long‑lasting materials and a calmer way of living. Our products are
               made to age beautifully — not to be replaced.
             </p>
-
           </div>
         </section>
 
         {/* FOOTER */}
-        <footer className="py-24 text-center text-sm text-[#6a6a6a] bg-white mt-24">
+        <footer className="py-24 text-center text-sm text-[#6a6a6a] bg-[#faf8f5] mt-24">
           <div className="flex flex-col items-center gap-6">
-
             <div className="flex items-center gap-3 opacity-90">
               <Image
                 src="https://media.magflags.net/media/catalog/product/cache/bbfe81b5dc693f3f88259968def067fa/N/O/NO-2.5x1.png"
@@ -151,15 +133,7 @@ export default function Home() {
             </p>
           </div>
         </footer>
-
       </div>
     </main>
   );
 }
-
-
-      </div>
-    </main>
-  );
-}
-
