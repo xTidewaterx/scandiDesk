@@ -12,7 +12,7 @@ export default function Navbar() {
           open ? "text-[#1a1a1a]" : "text-white"
         }`}
       >
-        <h1 className="text-2xl md:text-3xl font-light tracking-[0.25em] transition-colors duration-300">
+        <h1 className="text-2xl md:text-3xl font-light tracking-[0.05em] transition-colors duration-300">
           ScandiDesk
         </h1>
 

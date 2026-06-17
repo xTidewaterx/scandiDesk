@@ -19,7 +19,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/40 z-[1]" />
 
         <div className="relative z-10 text-center px-6">
-          <h1 className="text-4xl md:text-6xl font-light tracking-tight text-white drop-shadow-xl">
+          <h1 className="text-4xl  md:text-6xl font-light  tracking-[0.05em] text-white drop-shadow-xl">
             ScandiDesk
           </h1>
 
