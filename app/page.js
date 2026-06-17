@@ -2,11 +2,11 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-[#1a1a1a]">
+    <main className="min-h-screen bg-white text-[#1a1a1a] ">
 
       {/* NAVBAR */}
-      <nav className="absolute top-0 left-0 w-full z-20 px-14 pt-20  py-10 flex justify-between items-center">
-        <h1 className="text-white text-2xl font-light tracking-[0.25em] drop-shadow">
+      <nav className="absolute pt-8  top-0 left-0 w-full z-20 px-14 py-10 flex justify-between items-center">
+        <h1 className="text-black text-3xl font-light tracking-[0.25em] drop-shadow">
           ScandiDesk
         </h1>
 
@@ -17,34 +17,35 @@ export default function Home() {
         </ul>
       </nav>
 
-      {/* HERO */}
-      <section className="relative w-full h-[60vh] flex items-end justify-center pb-24 mb-0">
-        <Image
-          src="https://www.yankodesign.com/images/design_news/2022/06/this-beautiful-wooden-desk-has-subtle-ways-for-you-to-organize-your-things/pessoa-desk-8.jpg"
-          alt="ScandiDesk Hero"
-          fill
-          priority
-          className="object-cover object-center translate-y-10"
-        />
+{/* HERO */}
+<section className="relative w-full h-[60vh] flex items-end justify-center pb-24 mb-0">
+  <Image
+    src="https://www.yankodesign.com/images/design_news/2022/06/this-beautiful-wooden-desk-has-subtle-ways-for-you-to-organize-your-things/pessoa-desk-8.jpg"
+    alt="ScandiDesk Hero"
+    fill
+    priority
+    className="object-cover object-[center_0%]"
+  />
 
-        <div className="absolute inset-0 bg-black/25 backdrop-blur-[1px]"></div>
+  <div className="relative z-10 text-center px-6">
+    <h1 className="text-4xl md:text-6xl font-light tracking-tight text-white drop-shadow-xl">
+      ScandiDesk
+    </h1>
 
-        <div className="relative z-10 text-center px-6">
-          <h1 className="text-4xl md:text-6xl font-light tracking-tight text-white drop-shadow-xl">
-            ScandiDesk
-          </h1>
+    <p className="text-lg md:text-xl max-w-xl mx-auto text-white/90 leading-relaxed mt-4 drop-shadow">
+      Scandinavian desk essentials in natural wood.
+    </p>
+  </div>
+</section>
 
-          <p className="text-lg md:text-xl max-w-xl mx-auto text-white/90 leading-relaxed mt-4 drop-shadow">
-            Scandinavian desk essentials in natural wood.
-          </p>
-        </div>
-      </section>
+
+
 
       {/* EVERYTHING BELOW HERO IS BEIGE */}
-      <div className="bg-[#faf8f5] pt-32">
+      <div className="bg-[#faf8f5] pt-12">
 
         {/* PRODUCT GRID */}
-        <section className="px-6 py-24 max-w-6xl mx-auto">
+        <section className="px-6 py-14 max-w-6xl mx-auto">
           <h2 className="text-3xl font-light text-center mb-20">
             Calm. Natural. Nordic.
           </h2>
@@ -150,6 +151,12 @@ export default function Home() {
             </p>
           </div>
         </footer>
+
+      </div>
+    </main>
+  );
+}
+
 
       </div>
     </main>
