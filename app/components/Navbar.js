@@ -56,6 +56,12 @@ export default function Navbar() {
           </li>
         </ul>
       </div>
+
+      <ul className="hidden md:flex gap-12 absolute right-14 top-1/2 -translate-y-1/2 text-white text-sm font-light tracking-[0.2em] drop-shadow">
+        <li className="hover:opacity-80 transition cursor-pointer">HOME</li>
+        <li className="hover:opacity-80 transition cursor-pointer">PRODUKTER</li>
+        <li className="hover:opacity-80 transition cursor-pointer">OM OSS</li>
+      </ul>
     </nav>
   );
 }
